@@ -1,0 +1,1 @@
+{"version":3,"file":"schema.js","sourceRoot":"","sources":["../../../src/routes/Candidate/schema.ts"],"names":[],"mappings":";;;;;AAAA,8CAAsB;AAEtB,kBAAe;IACb,MAAM,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,IAAI,CAAC;QACxB,GAAG,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE,CAAC,GAAG,CAAC,CAAC,CAAC;KACpC,CAAC;CACH,CAAC"}

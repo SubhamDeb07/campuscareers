@@ -1,0 +1,14 @@
+{
+  "label": "Template: Generate Model File",
+  "type": "shell",
+  "command": "cp",
+  "presentation": {
+    "reveal": "never",
+    "panel": "shared"
+  },
+  "args": [
+    "${workspaceFolder}/.templates/database/Sample/model.ts",
+    "${workspaceFolder}/src/database/${input:modelName}/model.ts"
+  ],
+  "dependsOn": ["Template: Create DB Dir"]
+}
