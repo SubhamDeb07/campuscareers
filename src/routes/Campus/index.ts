@@ -6,8 +6,11 @@ import { authentication } from "../../auth/authentication";
 import { AuthRequest } from "../../auth/authentication";
 import jwt from "jsonwebtoken";
 import { Types } from "mongoose";
+import Auth from "../../auth/authorization";
 
 const router = express.Router();
+
+router.use(Auth);
 
 router.post(
   "/",

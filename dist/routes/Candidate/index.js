@@ -9,7 +9,9 @@ const asyncHandler_1 = __importDefault(require("../../helpers/asyncHandler"));
 const repo_2 = __importDefault(require("../../database/Campus/repo"));
 const authenticateCand_1 = require("../../auth/authenticateCand");
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const authorization_1 = __importDefault(require("../../auth/authorization"));
 const router = express_1.default.Router();
+router.use(authorization_1.default);
 router.post("/", (0, asyncHandler_1.default)(async (req, res) => {
     const user = { ...req.body };
     const findUser = await repo_1.default.findByEmail(user.email.toLowerCase());

@@ -7,7 +7,9 @@ const repo_1 = __importDefault(require("../../database/Campus/repo"));
 const express_1 = __importDefault(require("express"));
 const asyncHandler_1 = __importDefault(require("../../helpers/asyncHandler"));
 const authentication_1 = require("../../auth/authentication");
+const authorization_1 = __importDefault(require("../../auth/authorization"));
 const router = express_1.default.Router();
+router.use(authorization_1.default);
 router.post("/", authentication_1.authentication, (0, asyncHandler_1.default)(async (req, res) => {
     const campus = { ...req.body };
     const findCampus = await repo_1.default.findByCampusCode(campus.campusCode);
